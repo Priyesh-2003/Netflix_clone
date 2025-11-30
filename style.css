@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
 
 * {
@@ -117,6 +118,7 @@ nav button {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  position: relative;
 }
 
 .main input {
@@ -134,7 +136,6 @@ nav button {
   max-width: 70vw;
   margin: auto;
   color: white;
-  justify-content: center;
   align-items: center;
 }
 
@@ -321,15 +322,6 @@ footer .questions {
 .lang-dropdown.show .lang-menu {
   display: block;
 }
-.hero-buttons {
-  position: relative;
-}
-
-#error {
-  position: absolute;
-  top: 45px;
-  left: 0;
-}
 
 .faq {
   background: black;
@@ -421,33 +413,32 @@ footer .questions {
   gap: 12px;
   align-items: center;
 }
-
 .hero-buttons input {
-  width: 300px;
-  max-width: 85%;
+  width: 100%; 
   padding: 12px;
-  color: white;
   font-size: 14px;
+  color: white;
   border-radius: 4px;
   background-color: rgba(23, 23, 23, 0.7);
   border: 1px solid rgba(246, 238, 238, 0.5);
 }
-
 .hero-buttons p {
   width: 300px;
   max-width: 85%;
   text-align: left;
 }
+
 .input-container {
   position: relative;
-  width: 300px;
-  max-width: 85%;
+  width: 300px;    
+  max-width: 300px; 
 }
+
 
 .input-container p {
   position: absolute;
   top: 50%;
-  right: -210px;
+  right: -210px; 
   transform: translateY(-50%);
   color: #e50914;
   font-size: 14px;
@@ -462,9 +453,14 @@ footer .questions {
 @media (max-width: 600px) {
   .input-container p {
     position: relative;
-    right: 0;
+    left: 0;
     top: 0;
     transform: none;
     margin-top: 4px;
   }
 }
+#signinBtn {
+  width: 120px; 
+  text-align: center;
+}
+
